@@ -10,7 +10,7 @@ oChat.prototype = {
         var that = this;
         this.socket = io.connect();
         this.socket.on('connect', function() {
-            document.getElementById('info').textContent = 'get yourself a nickname :)';
+            document.getElementById('info').textContent = 'Pick your handle...';
             document.getElementById('nickWrapper').style.display = 'block';
             document.getElementById('nicknameInput').focus();
         });
