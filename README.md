@@ -1,9 +1,20 @@
-Ochat
+OChat
+===
 
-Made to use Node.js and Websocket
+A chat application built with Node.js and socket.io.
 
-Bronze: A running chat interface that anyone with the link can log in and create a nickname to use.  When the user signs out that nickname is freed.
 
-Silver: Emoji Support
 
-Gold: ?????
+Features
+---
+* send pictures
+* send emojis
+* keyboard support
+* online users count statistic
+
+How to run
+---
+1. download the code then extract
+2. run `npm install` from command line window
+3. run `node server` or `iojs server` if you are using [io.js](https://iojs.org/)
+4. finnaly, open your browser and visit `localhost:3000`
