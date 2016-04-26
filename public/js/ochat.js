@@ -1,6 +1,6 @@
 //Create a chat module to use.
  (function () {
-   window.Chat = {
+   window.oChat = {
      socket : null,
 
      initialize : function(socketURL) {
@@ -8,12 +8,12 @@
 
        //Send message on button click or enter
        $('#send').click(function() {
-         Chat.send();
+         oChat.send();
        });
 
        $('#message').keyup(function(evt) {
          if ((evt.keyCode || evt.which) == 13) {
-           Chat.send();
+           oChat.send();
            return false;
          }
        });
