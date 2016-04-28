@@ -141,6 +141,7 @@ oChat.prototype = {
         msgToDisplay.innerHTML = user + '<span class="timespan">(' + date + '): </span>' + msg;
         container.appendChild(msgToDisplay);
         container.scrollTop = container.scrollHeight;
+        msgToDisplay.classList.add("message");
     },
     _displayImage: function(user, imgData, color) {
         var container = document.getElementById('historyMsg'),
